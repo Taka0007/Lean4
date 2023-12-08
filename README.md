@@ -1,0 +1,2 @@
+# Lean4
+Lean4の証明をまとめたレポジトリ。後々lean-LLMを作成するためのdatasetとしても活用予定
