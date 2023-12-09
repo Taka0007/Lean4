@@ -1,4 +1,5 @@
 -- import
+import Std
 import Mathlib.Tactic
 
 -- 集合X,Y,Zを定義
@@ -24,3 +25,8 @@ example : Injective (fun x : ℕ ↦ x + 1) := by
 example : Injective (fun x : ℕ ↦ x + N) := by
   rw [Injective]
   simp
+
+
+-- f(x) = N*x (Nは自然数) が単射であることの証明
+example : Injective (fun x : ℕ ↦ N*x) := by
+  sorry
