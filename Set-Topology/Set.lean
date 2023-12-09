@@ -1,3 +1,6 @@
+-- ロード用のURL
+-- https://raw.githubusercontent.com/Taka0007/Lean4/main/Set-Topology/Set.lean
+
 -- import
 import Std
 import Mathlib.Tactic
