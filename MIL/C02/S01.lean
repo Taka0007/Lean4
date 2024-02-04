@@ -4,10 +4,21 @@ import Mathlib.Data.Real.Basic
 -- 積の交換ができることの証明
 example (a b c : ℝ) : a * b * c = b * (a * c) := by
   rw [mul_comm a b]
+  -- ⊢ b * a * c = b * (a * c)
   rw [mul_assoc b a c]
+  -- No goals
 
 example (a b c : ℝ) : c * b * a = b * (a * c) := by
-  sorry
+  rw [mul_comm c b]
+  -- ⊢ b * c * a = b * (a * c)
+  rw [mul_comm a c]
+  -- ⊢ b * c * a = b * (c * a)
+  rw [mul_assoc b c a]
+  -- No goals
+
+
+
+
 
 example (a b c : ℝ) : a * (b * c) = b * (a * c) := by
   sorry
