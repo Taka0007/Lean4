@@ -17,11 +17,15 @@ example (a b c : ℝ) : c * b * a = b * (a * c) := by
   -- No goals
 
 
-
-
-
 example (a b c : ℝ) : a * (b * c) = b * (a * c) := by
-  sorry
+  rw [mul_comm a c]
+  -- ⊢ a * (b * c) = b * (c * a)
+  rw [mul_comm]
+  -- ⊢ b * c * a = b * (c * a)
+  rw [mul_assoc b c a]
+  -- No goals
+
+
 
 
 example (a b c d e f : ℝ) (h : b * c = e * f) : a * b * c * d = a * e * f * d := by
