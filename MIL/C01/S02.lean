@@ -9,9 +9,15 @@ open Nat
 -- 2 + 2 : ℕ
 
 
-
 def f (x : ℕ) :=
   x + 3
 #check f
 -- output
 -- f (x : ℕ) : ℕ
+
+
+def FermatLastTheorem :=
+  ∀ x y z n : ℕ, n > 2 ∧ x * y * z ≠ 0 → x ^ n + y ^ n ≠ z ^ n
+#check FermatLastTheorem
+-- output
+-- FermatLastTheorem : Prop
