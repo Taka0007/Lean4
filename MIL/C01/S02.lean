@@ -21,3 +21,15 @@ def FermatLastTheorem :=
 #check FermatLastTheorem
 -- output
 -- FermatLastTheorem : Prop
+
+theorem easy : 2 + 2 = 4 :=
+  rfl
+#check easy
+-- output
+-- easy : 2 + 2 = 4
+
+theorem hard : FermatLastTheorem :=
+  sorry
+#check hard
+-- output
+-- hard : FermatLastTheorem
