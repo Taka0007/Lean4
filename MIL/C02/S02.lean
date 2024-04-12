@@ -2,9 +2,8 @@
 import Mathlib.Algebra.Ring.Defs
 import Mathlib.Data.Real.Basic
 
-
+-- Example
 variable (R : Type*) [Ring R]
-
 #check (add_assoc : ∀ a b c : R, a + b + c = a + (b + c))
 -- add_assoc : ∀ (a b c : R), a + b + c = a + (b + c)
 
@@ -33,6 +32,8 @@ variable (R : Type*) [Ring R]
 -- add_mul : ∀ (a b c : R), (a + b) * c = a * c + b * c
 
 
+
+-- Exercise
 theorem add_neg_cancel_right (a b : R) : a + b + -b = a := by
   sorry
 
