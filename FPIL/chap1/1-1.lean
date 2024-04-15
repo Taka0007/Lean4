@@ -32,3 +32,31 @@
 -- 結合させたい文字を最初に持ってくることも可能
 #eval String.append "great " (String.append "oak " "tree")
 -- "great oak tree"
+
+
+-- Exercise
+
+-- (1)
+#eval 42 + 19
+-- output
+-- 61
+
+-- (2)
+#eval String.append "A" (String.append "B" "C")
+-- output
+-- "ABC"
+
+-- (3)
+#eval String.append (String.append "A" "B") "C"
+-- output
+-- "ABC"
+
+-- (4)
+#eval if 3 == 3 then 5 else 7
+-- output
+-- 5
+
+-- (5)
+#eval if 3 == 4 then "equal" else "not equal"
+-- output
+-- "not equal"
