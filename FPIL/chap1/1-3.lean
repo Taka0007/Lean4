@@ -33,6 +33,8 @@ def maximum (n : Nat) (k : Nat) : Nat :=
 
 
 -- Exercise
+
+-- (1)
 def joinStringsWith (a : String) (b : String) (c : String) : String :=
   (b.append a ).append c
 
@@ -40,11 +42,12 @@ def joinStringsWith (a : String) (b : String) (c : String) : String :=
 -- output
 -- "one,and another"
 
+-- (2)
 #check joinStringsWith ": "
 -- output
 -- joinStringsWith ": " : String → String → String
 
-
+-- (3)
 def volume (a:Int) (b:Int) (c:Int) : Int :=
   a*b*c
 -- example
