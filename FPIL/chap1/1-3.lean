@@ -34,3 +34,5 @@ def joinStringsWith (a : String) (b : String) (c : String) : String :=
   (b.append a ).append c
 
 #eval joinStringsWith "," "one" "and another"
+-- output
+-- "one,and another"
