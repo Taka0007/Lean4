@@ -1,3 +1,6 @@
+-- ロード用のURL
+-- https://raw.githubusercontent.com/Taka0007/Lean4/main/FPIL/chap1/1-3.lean
+
 -- 関数の定義
 -- 新たな名前を定義する際には「:=」を使用する
 def hello := "Hello"
