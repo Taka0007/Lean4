@@ -9,3 +9,21 @@ def lean : String := "Lean"
 -- output
 -- "Hello Lean"
 
+
+-- 1を足す関数を定義
+def add1 (n : Nat) : Nat := n + 1
+
+#eval add1 7
+-- output
+-- 8
+
+-- 大きい方を出力する関数
+def maximum (n : Nat) (k : Nat) : Nat :=
+  if n < k then
+    k
+  else n
+
+-- example
+#eval maximum (14) (46)
+-- output
+-- 46
