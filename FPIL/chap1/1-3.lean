@@ -27,3 +27,10 @@ def maximum (n : Nat) (k : Nat) : Nat :=
 #eval maximum (14) (46)
 -- output
 -- 46
+
+
+-- Exercise
+def joinStringsWith (a : String) (b : String) (c : String) : String :=
+  (b.append a ).append c
+
+#eval joinStringsWith "," "one" "and another"
