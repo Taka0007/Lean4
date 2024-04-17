@@ -36,3 +36,15 @@ def joinStringsWith (a : String) (b : String) (c : String) : String :=
 #eval joinStringsWith "," "one" "and another"
 -- output
 -- "one,and another"
+
+#check joinStringsWith ": "
+-- output
+-- joinStringsWith ": " : String → String → String
+
+
+def volume (a:Int) (b:Int) (c:Int) : Int :=
+  a*b*c
+-- example
+#eval volume 472 7842957 73821791
+-- output
+-- 273279094528665864
