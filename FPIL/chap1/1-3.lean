@@ -54,3 +54,30 @@ def volume (a:Int) (b:Int) (c:Int) : Int :=
 #eval volume 472 7842957 73821791
 -- output
 -- 273279094528665864
+
+
+-- Define Type
+
+-- Stringって打ちたくないときは「Str=String」と定義すれば正常に動作する
+def Str : Type := String
+def aStr : Str := "This is a string."
+
+
+def NaturalNumber : Type := Nat
+
+
+--def thirtyEight : NaturalNumber := 38
+-- 上記のようにすると、このようなエラーが出る
+-- failed to synthesize instance
+--  OfNat NaturalNumber 38
+
+def thirtyEight : NaturalNumber := (38 : Nat)
+-- こうすればOK
+
+
+-- abbrev は新しい名前を定義する
+abbrev N : Type := Nat
+def thirtyNine : N := 39
+#eval thirtyNine + 1
+-- output
+-- 40
