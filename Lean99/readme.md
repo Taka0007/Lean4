@@ -1,1 +1,1 @@
-[Ninety-Nine Haskell Problems](https://wiki.haskell.org/H-99:_Ninety-Nine_Haskell_Problems) をLeanに翻訳し、解いていくレポジトリです。
+[Lean99](https://github.com/lean-ja/lean99) を解いていくレポジトリです。
