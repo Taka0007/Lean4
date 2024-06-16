@@ -1,1 +1,1 @@
-[Lean99](https://github.com/lean-ja/lean99) を解いていくレポジトリです。
+[Lean99](https://github.com/lean-ja/lean99) を解いていきます
